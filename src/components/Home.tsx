@@ -6,7 +6,7 @@ const Home: React.FC = () => {
             <div className={styles.homeContent}>
                 <h1 className = {styles.textColor}>Welcome to My Portfolio Website</h1>
                 <p className = {styles.textColor}>
-                    Hello! I'm Jeffrey, a current third year undergraduate student at Worcester Polytechnic Institute (WPI). I am majoring in Computer Science and Math.
+                    Hello! I'm Jeffrey, a fourth year undergraduate student studying computer science at Worcester Polytechnic Institute (WPI).
                 </p>
                 <div className={styles.ctaButtons}>
                     <Link to="/portfolio" className={styles.btnPrimary}>

@@ -1,10 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import styles from './NavBar.module.css'; // Optional: for styling
+import styles from './NavBar.module.css';
 import cubeIcon from "./assets/rubiks.png";
 
 
+
+
 const Navbar: React.FC = () => {
+
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbarContainer}>
@@ -20,7 +24,7 @@ const Navbar: React.FC = () => {
                     </Link>
 
             <div className={styles.menuIcon}>
-                    {/* Optional: Add hamburger menu icon for mobile */}
+
                 </div>
                 <ul className={styles.navMenu}>
 

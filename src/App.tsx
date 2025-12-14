@@ -14,7 +14,7 @@ function App() {
                 <Route path="/" Component={Home} />
                 <Route path="/about" Component={About} />
                 <Route path="/portfolio" Component={Portfolio} />
-
+                <Route path="/speedcubing" Component={Portfolio} />
             </Routes>
         </Router>
     );
