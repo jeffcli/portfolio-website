@@ -10,7 +10,6 @@ const About: React.FC = () => {
         'HTML',
         'CSS',
     ];
-
     return (
         <div className={styles.aboutContainer}>
 
