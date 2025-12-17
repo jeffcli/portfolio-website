@@ -1,21 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/NavBar.tsx';
-import Home from './components/Home.tsx';
-import About from './components/About.tsx';
-import Portfolio from './components/Projects.tsx';
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Portfolio from "./components/Projects";
+import Speedcubing from "./components/Speedcubing.tsx";
 
 function App() {
     return (
         <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" Component={Home} />
-                <Route path="/about" Component={About} />
-                <Route path="/portfolio" Component={Portfolio} />
-                <Route path="/speedcubing" Component={Portfolio} />
-            </Routes>
+            <div
+                className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-200 to-fuchsia-200 text-slate-800">
+                <Navbar/>
+
+                <main className="pt-32 px-6">
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/projects" element={<Portfolio/>}/>
+                        <Route path="/speedcubing" element={<Speedcubing/>}/>
+                    </Routes>
+                </main>
+            </div>
         </Router>
     );
 }

@@ -1,42 +1,52 @@
-
 import React from "react";
-import styles from "./Projects.module.css";
+import lemursImg from "./assets/lemurs.png";
+import brighamImg from "./assets/brigham.png";
 
 const Portfolio: React.FC = () => {
-
     const projects = [
         {
             id: 1,
-            title: 'Hospital Application in Collaboration with Brigham and Women’s Hospital',
-            description: 'Description of Project 1.',
-            imageUrl: 'path/to/image1.jpg',
-            demoUrl: 'https://example.com/project1',
-            githubUrl: 'https://github.com/username/project1',
+            title: "Hospital Application in Collaboration with Brigham and Women’s Hospital",
+            description: "",
+            imageUrl: lemursImg,
+            githubUrl: "https://github.com/jeffcli/softeng-project",
         },
         {
             id: 2,
-            title: 'Leveraging Early Mental Uncovering Risk for Suicide',
-            description: 'Description of Project 2.',
-            imageUrl: 'path/to/image2.jpg',
-            demoUrl: 'https://example.com/project2',
-            githubUrl: 'https://github.com/username/project2',
+            title: "LEMURS RADAR - Suicide Risk Alerting for School Administrators and Clinicians ",
+            description: "",
+            imageUrl: brighamImg,
+            githubUrl: "https://github.com/mqp-dashboard-lemurs-2025-2026/web-lemurs-radar",
         },
-
-
     ];
 
     return (
-        <div className={styles.portfolioContainer}>
-            <h1>Portfolio</h1>
-            <div className={styles.projectsContainer}>
-                {projects.map(project => (
-                    <div className="project-card" key={project.id}>
-                        <img src={project.imageUrl} alt={project.title} className="project-image" />
-                        <div className="project-info">
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                            <div className="project-links">
-                            </div>
+        <div className="container mx-auto p-4">
+            <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {projects.map((project) => (
+                    <div
+                        className="border rounded-lg shadow-md p-4"
+                        key={project.id}
+                    >
+                        <img
+                            src={project.imageUrl}
+                            alt={project.title}
+                            className="w-full h-48 object-cover rounded-md mb-4"
+                        />
+                        <h2 className="text-2xl font-semibold mb-2">
+                            {project.title}
+                        </h2>
+                        <p className="text-lg mb-4">{project.description}</p>
+                        <div className="flex gap-4">
+                            <a
+                                href={project.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black-500 underline"
+                            >
+                                GitHub Link
+                            </a>
                         </div>
                     </div>
                 ))}

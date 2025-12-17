@@ -1,37 +1,58 @@
-import styles from "./About.module.css";
-import jeffImg from "./assets/jeffrey.png"
+import jeffImg from "./assets/jeffrey.png";
 import {Link} from "react-router-dom";
+
 const About: React.FC = () => {
     const skills = [
-        'JavaScript',
-        'TypeScript',
-        'React',
-        'Node.js',
-        'HTML',
-        'CSS',
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "HTML",
+        "CSS",
     ];
+
     return (
-        <div className={styles.aboutContainer}>
+        <div className="container mx-auto p-4">
+            <h1 className="text-4xl font-bold text-center mb-8">About Me</h1>
 
-            <h1 className = {styles.heading}>About Me</h1>
-
-            <div className={styles.aboutContent}>
-                <div className={styles.profileImage}>
-                    <img src={jeffImg} alt="Profile" />
+            <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="w-48 h-48">
+                    <img
+                        src={jeffImg}
+                        alt="Profile"
+                        className="rounded-full object-cover w-full h-full"
+                    />
                 </div>
-                <div className={styles.profileInfo}>
-                    <p className = {styles.text}>
-                        My name is Jeffrey Li and I am a third year at Worcester Polytechnic Institute majoring in Computer Science and Math. My Computer science interests include Software Engineering, System Design and Artificial Intelligence.
+                <div className="flex-1">
+                    <p className="text-lg mb-4">
+                        My name is Jeffrey Li and I am a third year at Worcester Polytechnic Institute majoring in
+                        Computer Science. My interests include Software Engineering, System Design and Artificial
+                        Intelligence.
                     </p>
-                    <p  className = {styles.text}>
-                        Outside of academics, I am an avid runner and  <Link to="/speedcubing" className={styles.btnPrimary}>
-                        speedcuber
-                    </Link>
+                    <p className="text-lg mb-4">
+                        Outside of academics, I am an avid {" "}
+                        <a
+                            href="https://www.strava.com/athletes/42813327"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-blue-300 transition underline"
+                        >
+                            runner
+                        </a>
+                        {" "}
+                        and{" "}
+                        <Link
+                            to="/speedcubing"
+                            className="hover:text-blue-300 transition underline"
+                        >
+                            speedcuber
+                        </Link>
+                        .
                     </p>
 
-                    <div className={styles.skillsList}>
-                        <h3 className = {styles.text}>Skills</h3>
-                        <ul  className = {styles.text}>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Skills</h3>
+                        <ul className="list-disc list-inside">
                             {skills.map((skill, index) => (
                                 <li key={index}>{skill}</li>
                             ))}
