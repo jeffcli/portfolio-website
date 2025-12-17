@@ -13,7 +13,7 @@ const Speedcubing: React.FC = () => {
 
                 <div className="flex-1">
                     <p className="text-lg mb-4">
-                        Speedcubing, or speedsolving, is the competitive sport of solving a Rubik's Cube and other twisty puzzles as fast as possible, involving pattern recognition, algorithms, and finger tricks to achieve low solve times. Participants, called speedcubers, compete in various events, from the standard 3x3x3 cube to one-handed, blindfolded, or larger-sized cubes, all regulated by the World Cube Association (WCA), the sport's governing body.
+                        Speedcubing is the competitive sport of solving a Rubik's Cube and other twisty puzzles as fast as possible, involving pattern recognition, algorithms, and finger tricks to achieve low solve times. Participants, called speedcubers, compete in various events, from the standard 3x3x3 cube to one-handed, blindfolded, or larger-sized cubes, all regulated by the World Cube Association (WCA), the sport's governing body.
                     </p>
                     <p className="text-lg mb-4">
                         I have been speedcubing since 2015 and have participated in 2x2 up to 7x7, 3x3 One Handed, 3x3 Fewest Moves, Pyraminx (tetrahedron), Skewb (face turning), Megaminx (dodecahedron), Square-1 (Shape-shifting) and Rubik's Clock variants in official WCA competitions. You can find more of my speedcubing stats{" "}

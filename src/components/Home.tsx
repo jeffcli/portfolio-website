@@ -8,7 +8,7 @@ const Home: React.FC = () => {
 
             <p className="text-white/80 text-lg">
                 Hello! I'm Jeffrey, a fourth year undergraduate student studying
-                computer science at Worcester Polytechnic Institute (WPI).
+                Computer Science at Worcester Polytechnic Institute (WPI).
             </p>
 
 

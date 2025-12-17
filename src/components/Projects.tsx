@@ -8,21 +8,21 @@ const Portfolio: React.FC = () => {
             id: 1,
             title: "Hospital Application in Collaboration with Brigham and Women’s Hospital",
             description: "",
-            imageUrl: lemursImg,
+            imageUrl: brighamImg,
             githubUrl: "https://github.com/jeffcli/softeng-project",
         },
         {
             id: 2,
             title: "LEMURS RADAR - Suicide Risk Alerting for School Administrators and Clinicians ",
             description: "",
-            imageUrl: brighamImg,
+            imageUrl: lemursImg,
             githubUrl: "https://github.com/mqp-dashboard-lemurs-2025-2026/web-lemurs-radar",
         },
     ];
 
     return (
         <div className="container mx-auto p-4">
-            <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
+            <h1 className="text-4xl font-bold text-center mb-8">Projects</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {projects.map((project) => (
                     <div
@@ -32,7 +32,7 @@ const Portfolio: React.FC = () => {
                         <img
                             src={project.imageUrl}
                             alt={project.title}
-                            className="w-full h-48 object-cover rounded-md mb-4"
+                            className="w-full h-67 object-cover rounded-md mb-4"
                         />
                         <h2 className="text-2xl font-semibold mb-2">
                             {project.title}

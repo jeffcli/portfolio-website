@@ -25,7 +25,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex-1">
                     <p className="text-lg mb-4">
-                        My name is Jeffrey Li and I am a third year at Worcester Polytechnic Institute majoring in
+                        I am a fourth year at Worcester Polytechnic Institute (WPI) pursuing a bachelors and masters degree in
                         Computer Science. My interests include Software Engineering, System Design and Artificial
                         Intelligence.
                     </p>
