@@ -3,7 +3,9 @@ import Navbar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Projects";
-import Speedcubing from "./components/Speedcubing.tsx";
+import Speedcubing from "./components/Hobbies/Speedcubing";
+import Brigham from "./components/Projects/Brigham";
+import Lemurs from "./components/Projects/Lemurs";
 
 function App() {
     return (
@@ -18,6 +20,8 @@ function App() {
                         <Route path="/about" element={<About/>}/>
                         <Route path="/projects" element={<Portfolio/>}/>
                         <Route path="/speedcubing" element={<Speedcubing/>}/>
+                        <Route path="/brigham" element={<Brigham/>}/>
+                        <Route path="/lemurs" element={<Lemurs/>}/>
                     </Routes>
                 </main>
             </div>

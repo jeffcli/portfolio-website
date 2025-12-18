@@ -28,7 +28,7 @@ const Speedcubing: React.FC = () => {
                     </p>
 
                     <div>
-                        <h3 className="text-xl font-semibold mb-2">Some of my speedcubing accomplishments</h3>
+                        <h3 className="text-xl font-semibold mb-2">Accolades</h3>
                         <ul className="list-disc list-inside">
                             {cubingAccomplishments.map((skill, index) => (
                                 <li key={index}>{skill}</li>
