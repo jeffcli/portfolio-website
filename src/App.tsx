@@ -3,9 +3,10 @@ import Navbar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Projects";
-import Speedcubing from "./components/Hobbies/Speedcubing";
-import Brigham from "./components/Projects/Brigham";
-import Lemurs from "./components/Projects/Lemurs";
+import Speedcubing from "./components/hobbies/Speedcubing";
+import Brigham from "./components/projects/Brigham";
+import Lemurs from "./components/projects/Lemurs";
+import Multimodal from "./components/projects/Multimodal";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                         <Route path="/speedcubing" element={<Speedcubing/>}/>
                         <Route path="/brigham" element={<Brigham/>}/>
                         <Route path="/lemurs" element={<Lemurs/>}/>
+                        <Route path="/multimodal" element={<Multimodal/>}/>
                     </Routes>
                 </main>
             </div>

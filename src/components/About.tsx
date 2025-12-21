@@ -11,7 +11,7 @@ const About: React.FC = () => {
     ];
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto">
             <h1 className="text-4xl font-bold text-center mb-8">About Me</h1>
 
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -21,15 +21,15 @@ const About: React.FC = () => {
                         Computer Science. My interests lie at the intersection of Software Engineering, System Design and Machine Learning.
                     </p>
                     <p className="text-lg mb-4">
-                        Outside of academics, I am an avid runner (just ran my first marathon!)
+                        In my free time, I enjoy running (just ran my first marathon!), skiing in the winters,
 
                         {" "}
-                        and{" "}
+                        and {" "}
                         <Link
                             to="/speedcubing"
                             className="hover:text-blue-300 transition"
                         >
-                            speedcuber
+                            speedcubing
                         </Link>
                         .
                     </p>

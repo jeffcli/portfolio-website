@@ -1,19 +1,46 @@
 import { motion } from "framer-motion";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
 
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.05,
+        },
+    },
+};
+
+const letter = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { ease: "easeOut" },
+    },
+};
 
 const Home: React.FC = () => {
     return (
         <section className="max-w-4xl mx-auto text-center">
 
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                <motion.div
-                    initial={{opacity: 0, scale: 0.5}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{duration: 0.5}}
-                    style={{width: 100, height: 100}}
-                />
-                Welcome to My Portfolio Website!
+                <motion.h1
+                    className="text-4xl md:text-5xl font-bold text-white mb-6"
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                >
+                    {"Welcome to My Portfolio Website!".split("").map((char, index) => (
+                        <motion.span
+                            key={index}
+                            variants={letter}
+                            className="inline-block"
+                        >
+                            {char === " " ? "\u00A0" : char}
+                        </motion.span>
+                    ))}
+                </motion.h1>
             </h1>
 
             <p className="80 text-lg">
