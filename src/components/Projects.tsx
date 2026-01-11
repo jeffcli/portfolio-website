@@ -42,8 +42,9 @@ const Portfolio: React.FC = () => {
     }
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto pb-10">
             <h1 className="text-4xl font-bold text-center mb-8">Projects</h1>
+            <p className="text-xl text-center mb-8">A collection of projects spanning full-stack development, AI/ML, and other exploratory work</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 hover:cursor-pointer">
                 {projects.map((project) => (
                     <div

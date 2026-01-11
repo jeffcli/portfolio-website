@@ -15,7 +15,7 @@ function App() {
                 className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-200 to-fuchsia-200 text-slate-800">
                 <Navbar/>
 
-                <main className="pt-32 px-6">
+                <main className="pt-10 px-6">
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>

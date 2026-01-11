@@ -17,8 +17,10 @@ const About: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-1">
                     <p className="text-lg mb-4">
-                        I am a senior at Worcester Polytechnic Institute (WPI) pursuing a bachelors and masters degree in
-                        Computer Science. My interests lie at the intersection of Software Engineering, System Design and Machine Learning.
+                        I am a senior at Worcester Polytechnic Institute (WPI) pursuing a Bachelors and Masters degree
+                        in
+                        Computer Science. My interests lie at the intersection of Software Engineering, System Design
+                        and Machine Learning.
                     </p>
                     <p className="text-lg mb-4">
                         In my free time, I enjoy running (just ran my first marathon!), skiing in the winters,
