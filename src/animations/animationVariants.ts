@@ -1,15 +1,27 @@
+import { Variants } from "framer-motion";
 
-export const container = {
-    hidden: { opacity: 0 },
+export const container: Variants = {
+    hidden: { opacity: 0, y: -20 },
     show: {
         opacity: 1,
-        transition: { staggerChildren: 0.05 },
+        y: 0,
+        transition: {
+            ease: "easeInOut",
+        },
     },
 };
 
-export const letter = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { ease: "linear" } },
+export const letter: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: "spring",
+            stiffness: 500,
+            damping: 30,
+        },
+    },
 };
 
 export const aboutVariants = {

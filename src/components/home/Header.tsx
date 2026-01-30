@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                 </a>
 
                 <a
-                    className="px-8 py-3 bg-white text-neutral-900 border-2 border-neutral-200 rounded-lg font-medium hover:border-primary-600 hover:text-primary-600 transition-all duration-200 flex items-center gap-2"
+                    className="px-8 py-3 cursor-pointer bg-white text-neutral-900 border-2 border-neutral-200 rounded-lg font-medium hover:border-primary-600 hover:text-primary-600 transition-all duration-200 flex items-center gap-2"
                     onClick={togglePopup}
                 >
                     <svg
