@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { motion } from "framer-motion";
 import { container, letter } from "../../animations/animationVariants";
 import ContactPopup from "./ContactPopup.tsx";
+import {Link} from "react-router-dom";
 
 const Header: React.FC = () => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -38,11 +39,12 @@ const Header: React.FC = () => {
             <p className="text-lg">Aspiring Software Developer and Machine Learning Engineer</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-5">
-                <a
-                    className="group px-8 py-3 bg-primary-500 rounded-lg font-medium hover:bg-primary-600 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl"
-                    href="/projects"
-                >
-                    View My Work
+
+                    <Link to="/projects"
+                          className="group px-8 py-3 bg-primary-500 rounded-lg font-medium hover:bg-primary-600 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl"
+
+                    > View My Work
+
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18"
@@ -58,7 +60,8 @@ const Header: React.FC = () => {
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg>
-                </a>
+
+            </Link>
 
                 <a
                     className="px-8 py-3 cursor-pointer bg-white text-neutral-900 border-2 border-neutral-200 rounded-lg font-medium hover:border-primary-600 hover:text-primary-600 transition-all duration-200 flex items-center gap-2"
