@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => {
                     When I&#39;m not building, I am an avid runner (just ran my first marathon!),
                     and{" "}
                     <Link to="/speedcubing"
-                          className="text-blue-500 underline hover:text-blue-700">
+                          className="hover:text-blue-700">
                         speedcuber
                     </Link>
                     .
