@@ -52,7 +52,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
                         GitHub
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/jeffcli/"
+                        href="https://www.linkedin.com/in/jeffrey-li-156013203/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
@@ -61,7 +61,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
                         LinkedIn
                     </a>
                     <a
-                        href="mailto:jcli@wpi.edu"
+                        href="mailto:jeffrey.cui.li@gmail.com"
                         className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
                     >
                         <FiMail size={24} />

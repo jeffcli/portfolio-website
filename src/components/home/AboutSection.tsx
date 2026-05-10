@@ -18,11 +18,11 @@ const AboutSection: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-6">About me</h2>
 
                 <p className="text-lg mb-4">
-                    I’m a senior at Worcester Polytechnic Institute (WPI) pursuing my Bachelor’s and Master’s degrees in Computer Science, with interests in software engineering, system design, and machine learning. I enjoy building scalable, well-designed systems that solve real-world problems.
+                    I’m recent graduate from Worcester Polytechnic Institute (WPI) where I received my Bachelor’s and Master’s degrees in Computer Science. My interests include software engineering, system design, and machine learning. I enjoy building scalable, well-designed systems that solve real-world problems.
                 </p>
 
                 <p className="text-lg mb-4">
-                    When I&#39;m not building, I am an avid runner (just ran my first marathon!),
+                    When I&#39;m not building, I am an avid runner
                     and{" "}
                     <Link to="/speedcubing"
                           className="hover:text-blue-700">
