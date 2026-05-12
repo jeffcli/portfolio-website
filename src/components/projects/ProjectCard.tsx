@@ -8,7 +8,7 @@ interface Project {
     description: string;
     imageUrl: string;
     infoUrl?: string;
-    fileName: string;
+    fileName?: string;
     skills: string[];
     githubUrl: string;
 }
