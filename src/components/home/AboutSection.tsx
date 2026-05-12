@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { aboutVariants } from "../../animations/animationVariants";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import { Link } from "react-router-dom";
 
 const AboutSection: React.FC = () => {
     const { isVisible, elementRef } = useIntersectionObserver();
@@ -24,11 +23,14 @@ const AboutSection: React.FC = () => {
                 <p className="text-lg mb-4">
                     When I&#39;m not building, I am an avid runner
                     and{" "}
-                    <Link to="/speedcubing"
-                          className="hover:text-blue-700">
-                        speedcuber
-                    </Link>
-                    .
+                    <a
+                        href="https://www.worldcubeassociation.org/persons/2016LIJE01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-300 transition"
+                    > speedcuber.
+                    </a>
+
                 </p>
 
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">

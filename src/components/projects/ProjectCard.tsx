@@ -43,12 +43,12 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     <RiGithubFill size={32} />
                 </a>
                 <a
-                    href={project.fileName}
+                    href={project.fileName || project.infoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-blue-300 transition"
                 >
-                    <FiArrowUpRight size={32} />
+                    <FiArrowUpRight size={32}/>
                 </a>
             </div>
         </div>

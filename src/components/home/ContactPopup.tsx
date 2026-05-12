@@ -37,9 +37,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
 
                 <button
                     onClick={onClose}
-                    className="absolute cursor-pointer top-2 right-2 text-red-500 hover:text-red-700 font-bold text-lg"
-                >
-                    &#x2715;
+                    className="absolute cursor-pointer top-2 right-2 text-red-500 hover:text-red-700 font-bold text-lg">
                 </button>
                 <div className="flex flex-col gap-4 mt-10">
                     <a

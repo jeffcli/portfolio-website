@@ -3,11 +3,11 @@ import BrighamManual from "../../assets/HospitalUserManual.pdf";
 
 const FlowerProject = {
     id: 1,
-    title: "Hospital Application in Collaboration with Brigham and Women’s Hospital",
-    description: "A full stack web application designed to run on Kiosks at Brigham and Women's Hospital",
+    title: "Mums order tracker",
+    description: "A mobile app used to track orders for a cross country team fundraiser",
     imageUrl: BrighamImg,
     fileName: BrighamManual,
-    skills: ["React", "TypeScript", "PostgreSQL", "Node.js", "Express", "Auth0"],
+    skills: ["React Native","MySQL", "Spring Boot", "Express", "Auth0"],
     githubUrl: "https://github.com/jeffcli/softeng-project",
 };
 
